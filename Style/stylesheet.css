@@ -1,0 +1,42 @@
+@import url(font.css);
+
+:root {
+  --bdcolor: rgb(204, 204, 204);
+  --bgcolor: rgb(255, 255, 255);
+  --strongcolor: rgb(255, 45, 90);
+  font-family: kt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--strongcolor);
+  font-weight: bold;
+  text-align: center;
+}
+
+h1::after,
+h1::before {
+  content: "——";
+}
+
+div.header {
+  display: flex;
+  align-items: center;
+  border-bottom: var(--bdcolor) solid 1.5px;
+  margin: 0;
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: sticky;
+  background-color: var(--bgcolor);
+  top: 0;
+  img {
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+  }
+}
+
+div#body {
+    min-height: 50em;
+
+}
